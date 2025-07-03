@@ -430,6 +430,7 @@ def insert_footnote(filename, note_id, note_ref_id, epub, notes_index) {
 	extended_note_found = false;
     }
 
+    epub.paste(pagebreak);
     if (!extended_note_found) {
 	epub.paste("<div role=\"doc-footnote\" epub:type=\"footnote\" id=\"jpnote" + note_ref_id + "\">"+
 		   note +
